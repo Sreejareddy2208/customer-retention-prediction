@@ -1,0 +1,23 @@
+2026-02-04 15:52:44,175 - INFO - f_selection -  before constantIndex(['SeniorCitizen_yeo_trim', 'tenure_yeo_trim', 'MonthlyCharges_yeo_trim',
+       'JoinYear_yeo_trim', 'TotalCharges_replaced_yeo_trim'],
+      dtype='object') -> (5634, 5)
+2026-02-04 15:52:44,178 - INFO - f_selection -  after constantIndex(['tenure_yeo_trim', 'MonthlyCharges_yeo_trim', 'JoinYear_yeo_trim',
+       'TotalCharges_replaced_yeo_trim'],
+      dtype='object') -> (5634, 4)
+2026-02-04 15:52:44,178 - INFO - f_selection - ==================================================
+2026-02-04 15:52:44,178 - INFO - f_selection -  before quasiIndex(['tenure_yeo_trim', 'MonthlyCharges_yeo_trim', 'JoinYear_yeo_trim',
+       'TotalCharges_replaced_yeo_trim'],
+      dtype='object') -> (5634, 4)
+2026-02-04 15:52:44,180 - INFO - f_selection -  after quasiIndex(['tenure_yeo_trim', 'MonthlyCharges_yeo_trim',
+       'TotalCharges_replaced_yeo_trim'],
+      dtype='object') -> (5634, 3)
+2026-02-04 15:52:44,181 - INFO - f_selection - ================hypothesis=========
+2026-02-04 15:52:44,185 - INFO - f_selection - [0 1]
+2026-02-04 15:52:44,189 - INFO - f_selection - Index(['tenure_yeo_trim', 'MonthlyCharges_yeo_trim',
+       'TotalCharges_replaced_yeo_trim'],
+      dtype='object') -> (5634, 3)
+2026-02-04 15:52:44,189 - INFO - f_selection - Index(['tenure_yeo_trim', 'MonthlyCharges_yeo_trim',
+       'TotalCharges_replaced_yeo_trim'],
+      dtype='object') -> (1409, 3)
+2026-02-04 15:52:44,234 - INFO - f_selection - Reducing 31 features to 18
+2026-02-04 15:52:44,246 - INFO - f_selection - Selected top 18 features: ['Contract_res', 'tenure_yeo_trim', 'InternetService_Fiber optic', 'PaymentMethod_Electronic check', 'TotalCharges_replaced_yeo_trim', 'InternetService_No', 'OnlineSecurity_No internet service', 'OnlineBackup_No internet service', 'DeviceProtection_No internet service', 'TechSupport_No internet service', 'StreamingTV_No internet service', 'StreamingMovies_No internet service', 'PaperlessBilling_res', 'MonthlyCharges_yeo_trim', 'OnlineSecurity_Yes', 'TechSupport_Yes', 'Dependents_res', 'Partner_Yes']

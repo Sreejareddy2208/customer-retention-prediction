@@ -1,0 +1,88 @@
+2026-02-04 15:52:44,226 - INFO - cat_t_num - Train columns: Index(['PhoneService', 'gender_Male', 'Partner_Yes',
+       'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'sim_BSNL', 'sim_Jio', 'sim_Vi', 'Dependents_res',
+       'PaperlessBilling_res', 'Contract_res'],
+      dtype='object')
+2026-02-04 15:52:44,226 - INFO - cat_t_num - Test columns: Index(['PhoneService', 'gender_Male', 'Partner_Yes',
+       'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'sim_BSNL', 'sim_Jio', 'sim_Vi', 'Dependents_res',
+       'PaperlessBilling_res', 'Contract_res'],
+      dtype='object')
+2026-02-04 15:52:44,226 - INFO - cat_t_num - Train nulls:
+PhoneService                             0
+gender_Male                              0
+Partner_Yes                              0
+MultipleLines_No phone service           0
+MultipleLines_Yes                        0
+InternetService_Fiber optic              0
+InternetService_No                       0
+OnlineSecurity_No internet service       0
+OnlineSecurity_Yes                       0
+OnlineBackup_No internet service         0
+OnlineBackup_Yes                         0
+DeviceProtection_No internet service     0
+DeviceProtection_Yes                     0
+TechSupport_No internet service          0
+TechSupport_Yes                          0
+StreamingTV_No internet service          0
+StreamingTV_Yes                          0
+StreamingMovies_No internet service      0
+StreamingMovies_Yes                      0
+PaymentMethod_Credit card (automatic)    0
+PaymentMethod_Electronic check           0
+PaymentMethod_Mailed check               0
+sim_BSNL                                 0
+sim_Jio                                  0
+sim_Vi                                   0
+Dependents_res                           0
+PaperlessBilling_res                     0
+Contract_res                             0
+dtype: int64
+2026-02-04 15:52:44,226 - INFO - cat_t_num - Test nulls:
+PhoneService                             0
+gender_Male                              0
+Partner_Yes                              0
+MultipleLines_No phone service           0
+MultipleLines_Yes                        0
+InternetService_Fiber optic              0
+InternetService_No                       0
+OnlineSecurity_No internet service       0
+OnlineSecurity_Yes                       0
+OnlineBackup_No internet service         0
+OnlineBackup_Yes                         0
+DeviceProtection_No internet service     0
+DeviceProtection_Yes                     0
+TechSupport_No internet service          0
+TechSupport_Yes                          0
+StreamingTV_No internet service          0
+StreamingTV_Yes                          0
+StreamingMovies_No internet service      0
+StreamingMovies_Yes                      0
+PaymentMethod_Credit card (automatic)    0
+PaymentMethod_Electronic check           0
+PaymentMethod_Mailed check               0
+sim_BSNL                                 0
+sim_Jio                                  0
+sim_Vi                                   0
+Dependents_res                           0
+PaperlessBilling_res                     0
+Contract_res                             0
+dtype: int64

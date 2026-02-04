@@ -1,0 +1,3 @@
+2026-02-04 15:52:44,109 - INFO - yeo_johnson - Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'JoinYear',
+       'TotalCharges_replaced'],
+      dtype='object') -> (5634, 5)

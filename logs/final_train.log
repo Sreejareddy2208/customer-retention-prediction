@@ -1,0 +1,13 @@
+2026-02-04 15:52:46,859 - INFO - final_train - LogisticRegression Test Accuracy : 0.7735982966643009
+2026-02-04 15:52:46,859 - INFO - final_train - LogisticRegression confusion matrix : [[781 255]
+ [ 64 309]]
+2026-02-04 15:52:46,876 - INFO - final_train - LogisticRegression  classification report               precision    recall  f1-score   support
+
+           0       0.92      0.75      0.83      1036
+           1       0.55      0.83      0.66       373
+
+    accuracy                           0.77      1409
+   macro avg       0.74      0.79      0.74      1409
+weighted avg       0.82      0.77      0.79      1409
+
+2026-02-04 15:52:46,882 - INFO - final_train - Error in line no : 31 : due to X has 18 features, but StandardScaler is expecting 31 features as input.

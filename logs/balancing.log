@@ -1,0 +1,5 @@
+2026-02-04 15:52:44,287 - INFO - balancing - Checking column consistency...
+2026-02-04 15:52:44,288 - INFO - balancing - Before Good class: 1496
+2026-02-04 15:52:44,289 - INFO - balancing - Before Bad  class: 4138
+2026-02-04 15:52:46,802 - INFO - balancing - After Good class: 4138
+2026-02-04 15:52:46,802 - INFO - balancing - After Bad  class: 4138

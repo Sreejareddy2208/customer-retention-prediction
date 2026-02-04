@@ -1,0 +1,48 @@
+2026-02-04 15:52:44,077 - INFO - random_sample_tect - before filling null values training (5634, 21)
+2026-02-04 15:52:44,077 - INFO - random_sample_tect - before filling null values testing (1409, 21)
+2026-02-04 15:52:44,100 - INFO - random_sample_tect - after filling null values training (5634, 21)
+2026-02-04 15:52:44,100 - INFO - random_sample_tect - after filling null values testing (1409, 21)
+2026-02-04 15:52:44,102 - INFO - random_sample_tect - training data null valuesgender                   0
+SeniorCitizen            0
+Partner                  0
+Dependents               0
+tenure                   0
+PhoneService             0
+MultipleLines            0
+InternetService          0
+OnlineSecurity           0
+OnlineBackup             0
+DeviceProtection         0
+TechSupport              0
+StreamingTV              0
+StreamingMovies          0
+Contract                 0
+PaperlessBilling         0
+PaymentMethod            0
+MonthlyCharges           0
+JoinYear                 0
+sim                      0
+TotalCharges_replaced    0
+dtype: int64
+2026-02-04 15:52:44,104 - INFO - random_sample_tect - testing data null valuesgender                   0
+SeniorCitizen            0
+Partner                  0
+Dependents               0
+tenure                   0
+PhoneService             0
+MultipleLines            0
+InternetService          0
+OnlineSecurity           0
+OnlineBackup             0
+DeviceProtection         0
+TechSupport              0
+StreamingTV              0
+StreamingMovies          0
+Contract                 0
+PaperlessBilling         0
+PaymentMethod            0
+MonthlyCharges           0
+JoinYear                 0
+sim                      0
+TotalCharges_replaced    0
+dtype: int64

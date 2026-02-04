@@ -1,0 +1,269 @@
+2026-02-04 15:52:44,055 - INFO - main - customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+JoinYear            0
+sim                 0
+Churn               0
+dtype: int64
+2026-02-04 15:52:44,055 - INFO - main - (7043, 23)
+2026-02-04 15:52:44,055 - INFO - main - customerID           object
+gender               object
+SeniorCitizen         int64
+Partner              object
+Dependents           object
+tenure                int64
+PhoneService         object
+MultipleLines        object
+InternetService      object
+OnlineSecurity       object
+OnlineBackup         object
+DeviceProtection     object
+TechSupport          object
+StreamingTV          object
+StreamingMovies      object
+Contract             object
+PaperlessBilling     object
+PaymentMethod        object
+MonthlyCharges      float64
+TotalCharges         object
+JoinYear              int64
+sim                  object
+Churn                object
+dtype: object
+2026-02-04 15:52:44,076 - INFO - main - gender               0
+SeniorCitizen        0
+Partner              0
+Dependents           0
+tenure               0
+PhoneService         0
+MultipleLines        0
+InternetService      0
+OnlineSecurity       0
+OnlineBackup         0
+DeviceProtection     0
+TechSupport          0
+StreamingTV          0
+StreamingMovies      0
+Contract             0
+PaperlessBilling     0
+PaymentMethod        0
+MonthlyCharges       0
+TotalCharges        11
+JoinYear             0
+sim                  0
+Churn                0
+dtype: int64
+2026-02-04 15:52:44,077 - INFO - main - training data (5634, 21)
+2026-02-04 15:52:44,077 - INFO - main - test data (1409, 21)
+2026-02-04 15:52:44,104 - INFO - main - missing values handled
+2026-02-04 15:52:44,109 - INFO - main - Numeric train columns: Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'JoinYear',
+       'TotalCharges_replaced'],
+      dtype='object')
+2026-02-04 15:52:44,109 - INFO - main - Categorical train columns: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'sim'],
+      dtype='object')
+2026-02-04 15:52:44,109 - INFO - main - Numeric test columns: Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'JoinYear',
+       'TotalCharges_replaced'],
+      dtype='object')
+2026-02-04 15:52:44,109 - INFO - main - Categorical test columns: Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'sim'],
+      dtype='object')
+2026-02-04 15:52:44,165 - INFO - main -  var trans SeniorCitizen_yeo            0
+tenure_yeo                   0
+MonthlyCharges_yeo           0
+JoinYear_yeo                 0
+TotalCharges_replaced_yeo    0
+dtype: int64
+2026-02-04 15:52:44,165 - INFO - main - Before  outliers: Index(['SeniorCitizen_yeo', 'tenure_yeo', 'MonthlyCharges_yeo', 'JoinYear_yeo',
+       'TotalCharges_replaced_yeo'],
+      dtype='object') -> (5634, 5)
+2026-02-04 15:52:44,166 - INFO - main - Before  outliers: Index(['SeniorCitizen_yeo', 'tenure_yeo', 'MonthlyCharges_yeo', 'JoinYear_yeo',
+       'TotalCharges_replaced_yeo'],
+      dtype='object') -> (1409, 5)
+2026-02-04 15:52:44,175 - INFO - main - After  outliers: Index(['SeniorCitizen_yeo_trim', 'tenure_yeo_trim', 'MonthlyCharges_yeo_trim',
+       'JoinYear_yeo_trim', 'TotalCharges_replaced_yeo_trim'],
+      dtype='object') -> (5634, 5)
+2026-02-04 15:52:44,175 - INFO - main - After outliers: Index(['SeniorCitizen_yeo_trim', 'tenure_yeo_trim', 'MonthlyCharges_yeo_trim',
+       'JoinYear_yeo_trim', 'TotalCharges_replaced_yeo_trim'],
+      dtype='object') -> (1409, 5)
+2026-02-04 15:52:44,175 - INFO - main - Before feature selection: Index(['SeniorCitizen_yeo_trim', 'tenure_yeo_trim', 'MonthlyCharges_yeo_trim',
+       'JoinYear_yeo_trim', 'TotalCharges_replaced_yeo_trim'],
+      dtype='object') -> (5634, 5)
+2026-02-04 15:52:44,175 - INFO - main - Before  feature selection: Index(['SeniorCitizen_yeo_trim', 'tenure_yeo_trim', 'MonthlyCharges_yeo_trim',
+       'JoinYear_yeo_trim', 'TotalCharges_replaced_yeo_trim'],
+      dtype='object') -> (1409, 5)
+2026-02-04 15:52:44,190 - INFO - main - After feature selection : Index(['tenure_yeo_trim', 'MonthlyCharges_yeo_trim',
+       'TotalCharges_replaced_yeo_trim'],
+      dtype='object') -> (5634, 3)
+2026-02-04 15:52:44,190 - INFO - main - After  feature selection: Index(['tenure_yeo_trim', 'MonthlyCharges_yeo_trim',
+       'TotalCharges_replaced_yeo_trim'],
+      dtype='object') -> (1409, 3)
+2026-02-04 15:52:44,190 - INFO - main -  before cat_to_numIndex(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'sim'],
+      dtype='object')
+2026-02-04 15:52:44,190 - INFO - main - before cat_to_numIndex(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'sim'],
+      dtype='object')
+2026-02-04 15:52:44,226 - INFO - main -  after cat_to_numIndex(['PhoneService', 'gender_Male', 'Partner_Yes',
+       'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'sim_BSNL', 'sim_Jio', 'sim_Vi', 'Dependents_res',
+       'PaperlessBilling_res', 'Contract_res'],
+      dtype='object')
+2026-02-04 15:52:44,226 - INFO - main - after cat_to_numIndex(['PhoneService', 'gender_Male', 'Partner_Yes',
+       'MultipleLines_No phone service', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'sim_BSNL', 'sim_Jio', 'sim_Vi', 'Dependents_res',
+       'PaperlessBilling_res', 'Contract_res'],
+      dtype='object')
+2026-02-04 15:52:44,248 - INFO - main - final training data
+2026-02-04 15:52:44,248 - INFO - main - Index(['Contract_res', 'tenure_yeo_trim', 'InternetService_Fiber optic',
+       'PaymentMethod_Electronic check', 'TotalCharges_replaced_yeo_trim',
+       'InternetService_No', 'OnlineSecurity_No internet service',
+       'OnlineBackup_No internet service',
+       'DeviceProtection_No internet service',
+       'TechSupport_No internet service', 'StreamingTV_No internet service',
+       'StreamingMovies_No internet service', 'PaperlessBilling_res',
+       'MonthlyCharges_yeo_trim', 'OnlineSecurity_Yes', 'TechSupport_Yes',
+       'Dependents_res', 'Partner_Yes'],
+      dtype='object')
+2026-02-04 15:52:44,267 - INFO - main -       Contract_res  tenure_yeo_trim  InternetService_Fiber optic  PaymentMethod_Electronic check  ...  OnlineSecurity_Yes  TechSupport_Yes  Dependents_res  Partner_Yes
+3868           1.0         8.216112                          0.0                             0.0  ...                 0.0              0.0             1.0          1.0
+1104           2.0        13.135238                          1.0                             0.0  ...                 1.0              1.0             0.0          1.0
+2575           2.0        12.749968                          0.0                             0.0  ...                 0.0              1.0             1.0          1.0
+1462           1.0        12.552730                          0.0                             0.0  ...                 0.0              0.0             0.0          1.0
+4508           0.0         0.813719                          0.0                             0.0  ...                 0.0              1.0             0.0          0.0
+320            0.0         4.321395                          0.0                             0.0  ...                 0.0              0.0             1.0          1.0
+4268           1.0        12.944093                          0.0                             0.0  ...                 1.0              1.0             1.0          1.0
+4997           0.0         5.303083                          0.0                             1.0  ...                 0.0              1.0             0.0          0.0
+483            0.0        12.352231                          1.0                             1.0  ...                 0.0              1.0             0.0          1.0
+2918           0.0         4.046286                          1.0                             1.0  ...                 0.0              0.0             0.0          0.0
+
+[10 rows x 18 columns]
+2026-02-04 15:52:44,268 - INFO - main - Contract_res                            0
+tenure_yeo_trim                         0
+InternetService_Fiber optic             0
+PaymentMethod_Electronic check          0
+TotalCharges_replaced_yeo_trim          0
+InternetService_No                      0
+OnlineSecurity_No internet service      0
+OnlineBackup_No internet service        0
+DeviceProtection_No internet service    0
+TechSupport_No internet service         0
+StreamingTV_No internet service         0
+StreamingMovies_No internet service     0
+PaperlessBilling_res                    0
+MonthlyCharges_yeo_trim                 0
+OnlineSecurity_Yes                      0
+TechSupport_Yes                         0
+Dependents_res                          0
+Partner_Yes                             0
+dtype: int64
+2026-02-04 15:52:44,268 - INFO - main - final testing data
+2026-02-04 15:52:44,268 - INFO - main - Index(['Contract_res', 'tenure_yeo_trim', 'InternetService_Fiber optic',
+       'PaymentMethod_Electronic check', 'TotalCharges_replaced_yeo_trim',
+       'InternetService_No', 'OnlineSecurity_No internet service',
+       'OnlineBackup_No internet service',
+       'DeviceProtection_No internet service',
+       'TechSupport_No internet service', 'StreamingTV_No internet service',
+       'StreamingMovies_No internet service', 'PaperlessBilling_res',
+       'MonthlyCharges_yeo_trim', 'OnlineSecurity_Yes', 'TechSupport_Yes',
+       'Dependents_res', 'Partner_Yes'],
+      dtype='object')
+2026-02-04 15:52:44,283 - INFO - main -       Contract_res  tenure_yeo_trim  InternetService_Fiber optic  PaymentMethod_Electronic check  ...  OnlineSecurity_Yes  TechSupport_Yes  Dependents_res  Partner_Yes
+224            2.0        10.488669                          0.0                             0.0  ...                 0.0              0.0             0.0          0.0
+1350           0.0         2.688074                          0.0                             0.0  ...                 0.0              0.0             1.0          1.0
+182            0.0         4.417292                          1.0                             0.0  ...                 1.0              0.0             0.0          0.0
+218            1.0         9.751740                          1.0                             0.0  ...                 0.0              0.0             0.0          0.0
+388            0.0         1.889423                          1.0                             1.0  ...                 0.0              0.0             0.0          0.0
+915            0.0         1.400821                          1.0                             1.0  ...                 0.0              0.0             0.0          0.0
+632            0.0         1.400821                          0.0                             0.0  ...                 0.0              1.0             0.0          0.0
+79             1.0         7.786713                          0.0                             0.0  ...                 0.0              0.0             0.0          0.0
+833            2.0        12.161614                          1.0                             1.0  ...                 0.0              0.0             1.0          1.0
+1119           0.0         6.237853                          1.0                             1.0  ...                 0.0              0.0             0.0          0.0
+
+[10 rows x 18 columns]
+2026-02-04 15:52:44,284 - INFO - main - Contract_res                            0
+tenure_yeo_trim                         0
+InternetService_Fiber optic             0
+PaymentMethod_Electronic check          0
+TotalCharges_replaced_yeo_trim          0
+InternetService_No                      0
+OnlineSecurity_No internet service      0
+OnlineBackup_No internet service        0
+DeviceProtection_No internet service    0
+TechSupport_No internet service         0
+StreamingTV_No internet service         0
+StreamingMovies_No internet service     0
+PaperlessBilling_res                    0
+MonthlyCharges_yeo_trim                 0
+OnlineSecurity_Yes                      0
+TechSupport_Yes                         0
+Dependents_res                          0
+Partner_Yes                             0
+dtype: int64
+2026-02-04 15:52:44,284 - INFO - main - (5634, 18)
+2026-02-04 15:52:44,284 - INFO - main - (1409, 18)
+2026-02-04 15:52:44,284 - INFO - main - Contract_res                            float64
+tenure_yeo_trim                         float64
+InternetService_Fiber optic             float64
+PaymentMethod_Electronic check          float64
+TotalCharges_replaced_yeo_trim          float64
+InternetService_No                      float64
+OnlineSecurity_No internet service      float64
+OnlineBackup_No internet service        float64
+DeviceProtection_No internet service    float64
+TechSupport_No internet service         float64
+StreamingTV_No internet service         float64
+StreamingMovies_No internet service     float64
+PaperlessBilling_res                    float64
+MonthlyCharges_yeo_trim                 float64
+OnlineSecurity_Yes                      float64
+TechSupport_Yes                         float64
+Dependents_res                          float64
+Partner_Yes                             float64
+dtype: object
+2026-02-04 15:52:44,285 - INFO - main - Empty DataFrame
+Columns: []
+Index: [0, 1, 2, 3, 4]

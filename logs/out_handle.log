@@ -1,0 +1,3 @@
+2026-02-04 15:52:44,174 - INFO - out_handle - x_train_num_cols Index(['SeniorCitizen_yeo_trim', 'tenure_yeo_trim', 'MonthlyCharges_yeo_trim',
+       'JoinYear_yeo_trim', 'TotalCharges_replaced_yeo_trim'],
+      dtype='object')

@@ -1,0 +1,56 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #eaf6ff, #fdfefe);
+    min-height: 100vh;
+}
+
+.main-title {
+    font-weight: 600;
+    color: #0a3d62;
+}
+
+.card {
+    border-radius: 15px;
+    border: none;
+}
+
+.card-header {
+    background: linear-gradient(120deg, #0a3d62, #1e90ff);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.form-control {
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #1e90ff;
+}
+
+.section-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0a3d62;
+    margin-top: 15px;
+}
+
+.btn-predict {
+    background: linear-gradient(120deg, #1e90ff, #0a3d62);
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-predict:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+.alert {
+    border-radius: 10px;
+    font-weight: 500;
+}
